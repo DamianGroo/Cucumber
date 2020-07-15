@@ -48,7 +48,7 @@ WebDriver driver;
     public void szukasz_miejsca_do_wpisania() throws Throwable {
         String nazwaSerwisu = driver.getTitle();
         System.out.println(nazwaSerwisu);
-        Assert.assertEquals("Google", nazwaSerwisu);
+        Assert.assertEquals("Googleee", nazwaSerwisu);
     }
 
     @Then("^klikasz na szukajke$")
