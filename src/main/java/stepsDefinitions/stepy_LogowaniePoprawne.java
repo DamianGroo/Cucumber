@@ -12,11 +12,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
-
+/*
 
 public class stepy_LogowaniePoprawne {
 
-WebDriver driver = new ChromeDriver();
+WebDriver driver;
 WebDriverWait wait = new WebDriverWait(driver, 10);
 
     @Given("^Użytkownika uruchamia strone serwisu$")
@@ -86,3 +86,4 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 
 
 }
+*/

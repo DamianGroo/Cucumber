@@ -17,3 +17,16 @@ Scenario: badamy strone Media Expert
   Given daje ci otwarta strone
   Then sprawdzam tytul strony
   And zamykam strone
+
+
+
+  @scenariuszPoprawnegoLogowania
+  Scenario: Użytkownik wprowadza poprawne dane logowania
+    Given Użytkownika uruchamia strone serwisu
+    When Strona główna serwisu Media Expert jest wyświetlona
+    Then Użytkownik klika na przycisk Twoje konto
+    And Użytkownik czeka na załadowanie się strony
+    Then użytkownik wprowadza w pole login swój login
+    And użytkownik wprowadza w pole hasło swoje hasło
+    And użytkownik klika na przycisk zaloguj
+    Then Strona powitalna jest wyświetlona
