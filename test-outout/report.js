@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "line": 35,
+  "line": 53,
   "name": "Użytkownik wyszukuje konkretny produkt",
   "description": "",
   "id": "pierwszy-test;użytkownik-wyszukuje-konkretny-produkt",
@@ -21,165 +21,153 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 34,
-      "name": "@test3_WyszukanieProduktu"
+      "line": 52,
+      "name": "@test4_NieudanaRejestracja"
     }
   ]
 });
 formatter.step({
-  "line": 36,
+  "line": 54,
   "name": "Użytkownika uruchamia strone serwisu",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 37,
+  "line": 55,
   "name": "Strona główna serwisu Media Expert jest wyświetlona",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 38,
+  "line": 56,
   "name": "Użytkownik klika na przycisk Twoje konto",
   "keyword": "And "
 });
 formatter.step({
-  "line": 39,
+  "line": 57,
   "name": "Użytkownik czeka na załadowanie się strony",
   "keyword": "And "
 });
 formatter.step({
-  "line": 40,
-  "name": "użytkownik wprowadza w pole login swój login",
+  "line": 58,
+  "name": "użytkownik klika przycisk Rejestracja",
   "keyword": "And "
 });
 formatter.step({
-  "line": 41,
-  "name": "użytkownik wprowadza w pole hasło swoje hasło",
+  "line": 59,
+  "name": "użytkownik czeka na wyświetlenie się formularza rejestracji",
   "keyword": "And "
 });
 formatter.step({
-  "line": 42,
-  "name": "użytkownik klika na przycisk zaloguj",
+  "line": 60,
+  "name": "użytkownik wprowadza dane bez adresu email",
   "keyword": "And "
 });
 formatter.step({
-  "line": 43,
-  "name": "Strona powitalna jest wyświetlona",
+  "line": 61,
+  "name": "uzytkownik klika przycisk zapoznania sie z regulaminem",
   "keyword": "And "
 });
 formatter.step({
-  "line": 44,
-  "name": "Użytkownik wpisuje szukany produkt w wyszukiwarke",
+  "line": 62,
+  "name": "użytkownik klika przycisk Zalóż Konto",
   "keyword": "And "
 });
 formatter.step({
-  "line": 45,
-  "name": "Użytkownik czeka na znalezienie produktu",
+  "line": 63,
+  "name": "Użytkownik czeka na przetworzenie sie formularza",
   "keyword": "And "
 });
 formatter.step({
-  "line": 46,
-  "name": "Użytkownik klika na znaleziony produkt",
+  "line": 64,
+  "name": "Pojawia się komunikat o błędzie",
   "keyword": "And "
 });
 formatter.step({
-  "line": 47,
-  "name": "Weryfikacja tytulu strony z wyszukanym produktem",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 48,
-  "name": "Test nr trzy zakonczony",
+  "line": 65,
+  "name": "Test nr cztery zakonczony",
   "keyword": "And "
 });
 formatter.match({
   "location": "PierwszyTest.użytkownika_uruchamia_strone_serwisu()"
 });
 formatter.result({
-  "duration": 10685767900,
+  "duration": 11653735900,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.strona_główna_serwisu_Media_Expert_jest_wyświetlona()"
 });
 formatter.result({
-  "duration": 42582800,
+  "duration": 762074500,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_klika_na_przycisk_Twoje_konto()"
 });
 formatter.result({
-  "duration": 5206329800,
+  "duration": 5395712600,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_czeka_na_załadowanie_się_strony()"
 });
 formatter.result({
-  "duration": 5000437600,
+  "duration": 5000853100,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_wprowadza_w_pole_login_swój_login()"
+  "location": "PierwszyTest.użytkownik_klika_przycisk_Rejestracja()"
 });
 formatter.result({
-  "duration": 1322244200,
+  "duration": 1978490200,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_wprowadza_w_pole_hasło_swoje_hasło()"
+  "location": "PierwszyTest.użytkownik_czeka_na_wyświetlenie_się_formularza_rejestracji()"
 });
 formatter.result({
-  "duration": 1232224500,
+  "duration": 3001675900,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_klika_na_przycisk_zaloguj()"
+  "location": "PierwszyTest.użytkownik_wprowadza_dane_bez_adresu_email()"
 });
 formatter.result({
-  "duration": 2265538800,
+  "duration": 2000840200,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.strona_powitalna_jest_wyświetlona()"
+  "location": "PierwszyTest.uzytkownik_klika_przycisk_zapoznania_sie_z_regulaminem()"
 });
 formatter.result({
-  "duration": 6055555200,
+  "duration": 1617279600,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_wpisuje_szukany_produkt_w_wyszukiwarke()"
+  "location": "PierwszyTest.użytkownik_klika_przycisk_Zalóż_Konto()"
 });
 formatter.result({
-  "duration": 1448915500,
+  "duration": 160740600,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_czeka_na_znalezienie_produktu()"
+  "location": "PierwszyTest.użytkownik_czeka_na_przetworzenie_sie_formularza()"
 });
 formatter.result({
-  "duration": 6001684300,
+  "duration": 2002009300,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_klika_na_znaleziony_produkt()"
+  "location": "PierwszyTest.pojawia_się_komunikat_o_błędzie()"
 });
 formatter.result({
-  "duration": 5403499200,
+  "duration": 43525900,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.Weryfikacja_tytulu_strony_z_wyszukanym_produktem()"
+  "location": "PierwszyTest.test_nr_cztery_zakonczony()"
 });
 formatter.result({
-  "duration": 1977795400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PierwszyTest.test_nr_trzy_zakonczony()"
-});
-formatter.result({
-  "duration": 314674000,
+  "duration": 103895300,
   "status": "passed"
 });
 });

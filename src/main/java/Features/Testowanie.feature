@@ -46,3 +46,22 @@ Feature: Pierwszy test
     And Użytkownik klika na znaleziony produkt
     And Weryfikacja tytulu strony z wyszukanym produktem
     And Test nr trzy zakonczony
+
+
+
+  @test4_NieudanaRejestracja
+  Scenario: Użytkownik wyszukuje konkretny produkt
+    Given Użytkownika uruchamia strone serwisu
+    Then Strona główna serwisu Media Expert jest wyświetlona
+    And Użytkownik klika na przycisk Twoje konto
+    And Użytkownik czeka na załadowanie się strony
+    And użytkownik klika przycisk Rejestracja
+    And użytkownik czeka na wyświetlenie się formularza rejestracji
+    And użytkownik wprowadza dane bez adresu email
+    And uzytkownik klika przycisk zapoznania sie z regulaminem
+    And użytkownik klika przycisk Zalóż Konto
+    And Użytkownik czeka na przetworzenie sie formularza
+    And Pojawia się komunikat o błędzie
+    And Test nr cztery zakonczony
+
+

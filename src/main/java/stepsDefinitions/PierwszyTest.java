@@ -253,6 +253,62 @@ WebDriver driver;
     }
 
 
+// test nr 4 - nieudana rejestracja
+
+
+    @Then("^użytkownik klika przycisk Rejestracja$")
+    public void użytkownik_klika_przycisk_Rejestracja() throws Throwable {
+        driver.findElement(By.xpath("/html/body/div[1]/div[7]/div/div/div[2]/div[3]/a")).click();
+    }
+
+    @Then("^użytkownik czeka na wyświetlenie się formularza rejestracji$")
+    public void użytkownik_czeka_na_wyświetlenie_się_formularza_rejestracji() throws Throwable {
+        czas(3000);
+    }
+
+    @Then("^użytkownik wprowadza dane bez adresu email$")
+    public void użytkownik_wprowadza_dane_bez_adresu_email() throws Throwable {
+        String imie = "Elon";
+        String nazwisko = "Forest";
+        String fakeHaslo = "123456789";
+
+        driver.findElement(By.xpath("//*[@id=\"enp_customer_registration_form_type_address_firstName\"]")).sendKeys(imie);
+        driver.findElement(By.xpath("//*[@id=\"enp_customer_registration_form_type_address_lastName\"]")).sendKeys(nazwisko);
+        driver.findElement(By.xpath("//*[@id=\"enp_customer_registration_form_type_plainPassword\"]")).sendKeys(fakeHaslo);
+        czas(1500);
+    }
+
+    @Then("^uzytkownik klika przycisk zapoznania sie z regulaminem$")
+    public void uzytkownik_klika_przycisk_zapoznania_sie_z_regulaminem() throws Throwable {
+        driver.findElement(By.xpath("/html/body/div[1]/div[7]/div/div[1]/div[1]/div/div[2]/form/div[5]/div/label[3]/div[1]/p")).click();
+        czas(1500);
+    }
+
+    @Then("^użytkownik klika przycisk Zalóż Konto$")
+    public void użytkownik_klika_przycisk_Zalóż_Konto() throws Throwable {
+        driver.findElement(By.xpath("/html/body/div[1]/div[7]/div/div[1]/div[1]/div/div[2]/form/div[6]/div/input")).click();
+    }
+
+    @Then("^Użytkownik czeka na przetworzenie sie formularza$")
+    public void użytkownik_czeka_na_przetworzenie_sie_formularza() throws Throwable {
+        czas(2000);
+    }
+
+    @Then("^Pojawia się komunikat o błędzie$")
+    public void pojawia_się_komunikat_o_błędzie() throws Throwable {
+        String oczekiwanyBladEmail = "To pole jest wymagane";
+        String aktualnyBlad = driver.findElement(By.xpath("/html/body/div[1]/div[7]/div/div[1]/div[1]/div/div[2]/form/div[3]/div/div[2]")).getText();
+        Assert.assertEquals(oczekiwanyBladEmail, aktualnyBlad);
+
+    }
+
+    @Then("^Test nr cztery zakonczony$")
+    public void test_nr_cztery_zakonczony() throws Throwable {
+        driver.close();
+    }
+
+
+
 
 
 
