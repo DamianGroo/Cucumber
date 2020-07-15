@@ -105,7 +105,7 @@ WebDriver driver;
 
 
 
-//// nowa proba
+//// test nr 1 - poprawne dane logowania
 
 
 
@@ -174,6 +174,45 @@ WebDriver driver;
                 //driver.findElement(By.className("is-user")).getText();
         Assert.assertEquals("Witaj DDD", wynikLogowania);
     }
+
+    @Then("^Test nr jeden zakonczony$")
+    public void test_nr_jeden_zakonczony() throws Throwable {
+        driver.close();
+    }
+
+
+
+// test nr 2 - niepoprawne dane logowania
+
+
+
+    @Then("^użytkownik wprowadza w pole hasło błędne hasło$")
+    public void użytkownik_wprowadza_w_pole_hasło_błędne_hasło() throws Throwable {
+        String Zlehaslo = "invalidinvalidinvalid";
+        driver.findElement(By.id("enp_customer_form_login_password")).click();
+        driver.findElement(By.id("enp_customer_form_login_password")).sendKeys(Zlehaslo);
+        czas(1000);
+    }
+
+
+    @Then("^Strona z komunikatem błędnego logowania jest widoczna$")
+    public void strona_z_komunikatem_błędnego_logowania_jest_widoczna() throws Throwable {
+        czas(5000);
+        String wynikLogowania = driver.findElement(By.xpath("/html/body/div[1]/div[6]/div/p")).getText();
+        String spodziewanyKomunikat = "Nieprawidłowa nazwa użytkownika lub hasło";
+
+        //driver.findElement(By.className("is-user")).getText();
+        Assert.assertEquals(spodziewanyKomunikat, wynikLogowania);
+    }
+
+
+    @Then("^Test nr dwa zakonczony$")
+    public void test_nr_dwa_zakonczony() throws Throwable {
+        driver.close();
+    }
+
+
+
 
 
 

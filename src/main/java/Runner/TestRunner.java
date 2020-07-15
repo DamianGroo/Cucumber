@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
        // , tags = { "@scenariusz1" , "@scenariusz2" }
     //    , tags = {"@grupaScenariuszy"}
 
-       , tags = {"@scenariusz3"}
+       , tags = {"@grupaScenariuszy"}
 
                 )
 
