@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
     //    , tags = {"@grupaScenariuszy"}
 
      //  , tags = {"@grupaScenariuszy"}
-        , tags = {"@test4_NieudanaRejestracja"}
+        , tags = {"@test5_DodaniePrzedmiotuDoKoszyka"}
 
                 )
 

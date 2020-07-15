@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 
@@ -26,13 +27,22 @@ public class PierwszyTest {
         }
     }
 
-
-
-
+/*
+    private boolean czyJestElement(WebElement) {
+        try {
+            driver.findElement(By.xpath(sciezka));
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+        return true;
+    }
+*/
 
 
 WebDriver driver;
 
+
+    /*
     @Given("^daje ci slowo kluczowe$")
     public void daje_ci_slowo_kluczowe() throws Throwable {
         System.setProperty("webdriver.chrome.driver", "E:\\mvnrepository.com\\chromeDriver_Wersja_83\\chromedriver.exe");
@@ -103,15 +113,15 @@ WebDriver driver;
         driver.close();
     }
 
-
+*/
 
 //// test nr 1 - poprawne dane logowania
 
 
 
 
-    @Given("^Użytkownika uruchamia strone serwisu$")
-    public void użytkownika_uruchamia_strone_serwisu() throws Throwable {
+    @Given("^Użytkownik uruchamia strone serwisu$")
+    public void użytkownik_uruchamia_strone_serwisu() throws Throwable {
 
         System.setProperty("webdriver.chrome.driver", "E:\\mvnrepository.com\\chromeDriver_Wersja_83\\chromedriver.exe");
 
@@ -309,8 +319,37 @@ WebDriver driver;
 
 
 
+    // test nr 5 - dodanie produktu do koszyka
 
 
+    @Then("^Użytkownik dodaje produkt do koszyka$")
+    public void Użytkownik_dodaje_produkt_do_koszyka() throws Throwable {
+        driver.findElement(By.xpath("/html/body/div[2]/div[15]/div[1]/div/div[2]/div/div/div[3]/div[4]/div[1]/div[2]/a")).click();
+        czas(6000);
+        driver.findElement(By.xpath("//*[@id=\"preCart\"]/div/div/div/div/div[2]/div[3]/div/a[1]")).click();
+        czas(2000);
+        driver.findElement(By.xpath("//*[@id=\"preCart\"]/div/div/div/div/div[2]/div[3]/div/a[1]")).click();
+        czas(10000);
+        driver.findElement(By.xpath("/html/body/div[1]/div[6]/div/div[1]/div/div/div[1]/p/a/picture/img")).click();
+czas(9000);
+
+   //     WebDriverWait waiter = new WebDriverWait(driver, 15000);
+   //     waiter.until( ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/div[3]/div/div[5]/div/div/div[3]/div/ul/li[5]/div/div[1]/span[3]")) );
+     //   driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[5]/div/div/div[3]/div/ul/li[5]/div/div[1]/span[3]")).click();
+
+        driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[5]/div/div/div[3]/div/ul/li[5]/div/div[1]/span[2]")).click();
+        czas(6000);
+
+       String jakiProdukt = driver.findElement(By.xpath("/html/body/div[1]/div[9]/div/form/div[2]/div[1]/div[3]/div/div/div[1]/div[2]/div/a")).getText();
+       String spodziewanyProdukt = "Smartfon APPLE iPhone 11 Pro Max 64GB Srebrny";
+       Assert.assertEquals(spodziewanyProdukt, jakiProdukt);
+    }
+
+
+    @Then("^Test nr piec zakonczony$")
+    public void test_nr_piec_zakonczony() throws Throwable {
+        driver.close();
+    }
 
 
 

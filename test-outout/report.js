@@ -13,161 +13,185 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "line": 53,
-  "name": "Użytkownik wyszukuje konkretny produkt",
+  "line": 69,
+  "name": "Użytkownik dodaje produkt do koszyka",
   "description": "",
-  "id": "pierwszy-test;użytkownik-wyszukuje-konkretny-produkt",
+  "id": "pierwszy-test;użytkownik-dodaje-produkt-do-koszyka",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 52,
-      "name": "@test4_NieudanaRejestracja"
+      "line": 68,
+      "name": "@test5_DodaniePrzedmiotuDoKoszyka"
     }
   ]
 });
 formatter.step({
-  "line": 54,
-  "name": "Użytkownika uruchamia strone serwisu",
+  "line": 70,
+  "name": "Użytkownik uruchamia strone serwisu",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 55,
+  "line": 71,
   "name": "Strona główna serwisu Media Expert jest wyświetlona",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 56,
+  "line": 72,
   "name": "Użytkownik klika na przycisk Twoje konto",
   "keyword": "And "
 });
 formatter.step({
-  "line": 57,
+  "line": 73,
   "name": "Użytkownik czeka na załadowanie się strony",
   "keyword": "And "
 });
 formatter.step({
-  "line": 58,
-  "name": "użytkownik klika przycisk Rejestracja",
+  "line": 74,
+  "name": "użytkownik wprowadza w pole login swój login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 59,
-  "name": "użytkownik czeka na wyświetlenie się formularza rejestracji",
+  "line": 75,
+  "name": "użytkownik wprowadza w pole hasło swoje hasło",
   "keyword": "And "
 });
 formatter.step({
-  "line": 60,
-  "name": "użytkownik wprowadza dane bez adresu email",
+  "line": 76,
+  "name": "użytkownik klika na przycisk zaloguj",
   "keyword": "And "
 });
 formatter.step({
-  "line": 61,
-  "name": "uzytkownik klika przycisk zapoznania sie z regulaminem",
+  "line": 77,
+  "name": "Strona powitalna jest wyświetlona",
   "keyword": "And "
 });
 formatter.step({
-  "line": 62,
-  "name": "użytkownik klika przycisk Zalóż Konto",
+  "line": 78,
+  "name": "Użytkownik wpisuje szukany produkt w wyszukiwarke",
   "keyword": "And "
 });
 formatter.step({
-  "line": 63,
-  "name": "Użytkownik czeka na przetworzenie sie formularza",
+  "line": 79,
+  "name": "Użytkownik czeka na znalezienie produktu",
   "keyword": "And "
 });
 formatter.step({
-  "line": 64,
-  "name": "Pojawia się komunikat o błędzie",
+  "line": 80,
+  "name": "Użytkownik klika na znaleziony produkt",
   "keyword": "And "
 });
 formatter.step({
-  "line": 65,
-  "name": "Test nr cztery zakonczony",
+  "line": 81,
+  "name": "Weryfikacja tytulu strony z wyszukanym produktem",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 82,
+  "name": "Użytkownik dodaje produkt do koszyka",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 83,
+  "name": "Test nr piec zakonczony",
   "keyword": "And "
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownika_uruchamia_strone_serwisu()"
+  "location": "PierwszyTest.użytkownik_uruchamia_strone_serwisu()"
 });
 formatter.result({
-  "duration": 11653735900,
+  "duration": 8661853400,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.strona_główna_serwisu_Media_Expert_jest_wyświetlona()"
 });
 formatter.result({
-  "duration": 762074500,
+  "duration": 1022287100,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_klika_na_przycisk_Twoje_konto()"
 });
 formatter.result({
-  "duration": 5395712600,
+  "duration": 5464197800,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_czeka_na_załadowanie_się_strony()"
 });
 formatter.result({
-  "duration": 5000853100,
+  "duration": 5001595900,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_klika_przycisk_Rejestracja()"
+  "location": "PierwszyTest.użytkownik_wprowadza_w_pole_login_swój_login()"
 });
 formatter.result({
-  "duration": 1978490200,
+  "duration": 1319898200,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_czeka_na_wyświetlenie_się_formularza_rejestracji()"
+  "location": "PierwszyTest.użytkownik_wprowadza_w_pole_hasło_swoje_hasło()"
 });
 formatter.result({
-  "duration": 3001675900,
+  "duration": 1212713200,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_wprowadza_dane_bez_adresu_email()"
+  "location": "PierwszyTest.użytkownik_klika_na_przycisk_zaloguj()"
 });
 formatter.result({
-  "duration": 2000840200,
+  "duration": 3025932700,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.uzytkownik_klika_przycisk_zapoznania_sie_z_regulaminem()"
+  "location": "PierwszyTest.strona_powitalna_jest_wyświetlona()"
 });
 formatter.result({
-  "duration": 1617279600,
+  "duration": 5193861400,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_klika_przycisk_Zalóż_Konto()"
+  "location": "PierwszyTest.użytkownik_wpisuje_szukany_produkt_w_wyszukiwarke()"
 });
 formatter.result({
-  "duration": 160740600,
+  "duration": 1252088900,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_czeka_na_przetworzenie_sie_formularza()"
+  "location": "PierwszyTest.użytkownik_czeka_na_znalezienie_produktu()"
 });
 formatter.result({
-  "duration": 2002009300,
+  "duration": 6000557000,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.pojawia_się_komunikat_o_błędzie()"
+  "location": "PierwszyTest.użytkownik_klika_na_znaleziony_produkt()"
 });
 formatter.result({
-  "duration": 43525900,
+  "duration": 5071181300,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.test_nr_cztery_zakonczony()"
+  "location": "PierwszyTest.Weryfikacja_tytulu_strony_z_wyszukanym_produktem()"
 });
 formatter.result({
-  "duration": 103895300,
+  "duration": 2007273100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PierwszyTest.Użytkownik_dodaje_produkt_do_koszyka()"
+});
+formatter.result({
+  "duration": 42734950500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PierwszyTest.test_nr_piec_zakonczony()"
+});
+formatter.result({
+  "duration": 4112397800,
   "status": "passed"
 });
 });
