@@ -28,3 +28,21 @@ Feature: Pierwszy test
     And użytkownik klika na przycisk zaloguj
     And Strona z komunikatem błędnego logowania jest widoczna
     And Test nr dwa zakonczony
+
+
+
+  @test3_WyszukanieProduktu
+  Scenario: Użytkownik wyszukuje konkretny produkt
+    Given Użytkownika uruchamia strone serwisu
+    Then Strona główna serwisu Media Expert jest wyświetlona
+    And Użytkownik klika na przycisk Twoje konto
+    And Użytkownik czeka na załadowanie się strony
+    And użytkownik wprowadza w pole login swój login
+    And użytkownik wprowadza w pole hasło swoje hasło
+    And użytkownik klika na przycisk zaloguj
+    And Strona powitalna jest wyświetlona
+    And Użytkownik wpisuje szukany produkt w wyszukiwarke
+    And Użytkownik czeka na znalezienie produktu
+    And Użytkownik klika na znaleziony produkt
+    And Weryfikacja tytulu strony z wyszukanym produktem
+    And Test nr trzy zakonczony

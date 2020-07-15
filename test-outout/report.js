@@ -13,247 +13,173 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "line": 8,
-  "name": "Użytkownik wprowadza poprawne dane logowania",
+  "line": 35,
+  "name": "Użytkownik wyszukuje konkretny produkt",
   "description": "",
-  "id": "pierwszy-test;użytkownik-wprowadza-poprawne-dane-logowania",
+  "id": "pierwszy-test;użytkownik-wyszukuje-konkretny-produkt",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 7,
-      "name": "@test1_poprawneLogowanie"
+      "line": 34,
+      "name": "@test3_WyszukanieProduktu"
     }
   ]
 });
 formatter.step({
-  "line": 9,
+  "line": 36,
   "name": "Użytkownika uruchamia strone serwisu",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 10,
+  "line": 37,
   "name": "Strona główna serwisu Media Expert jest wyświetlona",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 38,
   "name": "Użytkownik klika na przycisk Twoje konto",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 39,
   "name": "Użytkownik czeka na załadowanie się strony",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 40,
   "name": "użytkownik wprowadza w pole login swój login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 41,
   "name": "użytkownik wprowadza w pole hasło swoje hasło",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 42,
   "name": "użytkownik klika na przycisk zaloguj",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 43,
   "name": "Strona powitalna jest wyświetlona",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
-  "name": "Test nr jeden zakonczony",
+  "line": 44,
+  "name": "Użytkownik wpisuje szukany produkt w wyszukiwarke",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 45,
+  "name": "Użytkownik czeka na znalezienie produktu",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 46,
+  "name": "Użytkownik klika na znaleziony produkt",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 47,
+  "name": "Weryfikacja tytulu strony z wyszukanym produktem",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 48,
+  "name": "Test nr trzy zakonczony",
   "keyword": "And "
 });
 formatter.match({
   "location": "PierwszyTest.użytkownika_uruchamia_strone_serwisu()"
 });
 formatter.result({
-  "duration": 8997204800,
+  "duration": 10685767900,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.strona_główna_serwisu_Media_Expert_jest_wyświetlona()"
 });
 formatter.result({
-  "duration": 771809000,
+  "duration": 42582800,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_klika_na_przycisk_Twoje_konto()"
 });
 formatter.result({
-  "duration": 5065453400,
+  "duration": 5206329800,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_czeka_na_załadowanie_się_strony()"
 });
 formatter.result({
-  "duration": 5000115700,
+  "duration": 5000437600,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_wprowadza_w_pole_login_swój_login()"
 });
 formatter.result({
-  "duration": 1420538500,
+  "duration": 1322244200,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_wprowadza_w_pole_hasło_swoje_hasło()"
 });
 formatter.result({
-  "duration": 1334299100,
+  "duration": 1232224500,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_klika_na_przycisk_zaloguj()"
 });
 formatter.result({
-  "duration": 2718124300,
+  "duration": 2265538800,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.strona_powitalna_jest_wyświetlona()"
 });
 formatter.result({
-  "duration": 5091535100,
+  "duration": 6055555200,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.test_nr_jeden_zakonczony()"
+  "location": "PierwszyTest.użytkownik_wpisuje_szukany_produkt_w_wyszukiwarke()"
 });
 formatter.result({
-  "duration": 158469900,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 21,
-  "name": "Użytkownik wprowadza nie poprawne dane logowania",
-  "description": "",
-  "id": "pierwszy-test;użytkownik-wprowadza-nie-poprawne-dane-logowania",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 20,
-      "name": "@test2_NiePoprawneLogowanie"
-    }
-  ]
-});
-formatter.step({
-  "line": 22,
-  "name": "Użytkownika uruchamia strone serwisu",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 23,
-  "name": "Strona główna serwisu Media Expert jest wyświetlona",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "Użytkownik klika na przycisk Twoje konto",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "Użytkownik czeka na załadowanie się strony",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "użytkownik wprowadza w pole login swój login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "użytkownik wprowadza w pole hasło błędne hasło",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "użytkownik klika na przycisk zaloguj",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 29,
-  "name": "Strona z komunikatem błędnego logowania jest widoczna",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 30,
-  "name": "Test nr dwa zakonczony",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "PierwszyTest.użytkownika_uruchamia_strone_serwisu()"
-});
-formatter.result({
-  "duration": 8161859500,
+  "duration": 1448915500,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.strona_główna_serwisu_Media_Expert_jest_wyświetlona()"
+  "location": "PierwszyTest.użytkownik_czeka_na_znalezienie_produktu()"
 });
 formatter.result({
-  "duration": 647742100,
+  "duration": 6001684300,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_klika_na_przycisk_Twoje_konto()"
+  "location": "PierwszyTest.użytkownik_klika_na_znaleziony_produkt()"
 });
 formatter.result({
-  "duration": 4927309900,
+  "duration": 5403499200,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_czeka_na_załadowanie_się_strony()"
+  "location": "PierwszyTest.Weryfikacja_tytulu_strony_z_wyszukanym_produktem()"
 });
 formatter.result({
-  "duration": 5001876100,
+  "duration": 1977795400,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.użytkownik_wprowadza_w_pole_login_swój_login()"
+  "location": "PierwszyTest.test_nr_trzy_zakonczony()"
 });
 formatter.result({
-  "duration": 1281698100,
+  "duration": 314674000,
   "status": "passed"
-});
-formatter.match({
-  "location": "PierwszyTest.użytkownik_wprowadza_w_pole_hasło_błędne_hasło()"
-});
-formatter.result({
-  "duration": 1272987100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PierwszyTest.użytkownik_klika_na_przycisk_zaloguj()"
-});
-formatter.result({
-  "duration": 3039873200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PierwszyTest.strona_z_komunikatem_błędnego_logowania_jest_widoczna()"
-});
-formatter.result({
-  "duration": 5066455700,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Witaj DDD]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepsDefinitions.PierwszyTest.strona_z_komunikatem_błędnego_logowania_jest_widoczna(PierwszyTest.java:204)\r\n\tat ✽.And Strona z komunikatem błędnego logowania jest widoczna(Testowanie.feature:29)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "PierwszyTest.test_nr_dwa_zakonczony()"
-});
-formatter.result({
-  "status": "skipped"
 });
 });

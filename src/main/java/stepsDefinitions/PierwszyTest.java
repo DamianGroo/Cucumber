@@ -214,6 +214,61 @@ WebDriver driver;
 
 
 
+// test nr 3 - wyszukiwanie produktu
+
+
+    @Then("^Użytkownik wpisuje szukany produkt w wyszukiwarke$")
+    public void użytkownik_wpisuje_szukany_produkt_w_wyszukiwarke() throws Throwable {
+        String produkt = "Smartfon APPLE iPhone 11 Pro Max 64GB Srebrny";
+        driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[5]/div/div/div[2]/div/div[1]/div[1]/form/input")).sendKeys(produkt);
+
+    }
+
+    @Then("^Użytkownik czeka na znalezienie produktu$")
+    public void użytkownik_czeka_na_znalezienie_produktu() throws Throwable {
+        czas(6000);
+    }
+
+    @Then("^Użytkownik klika na znaleziony produkt$")
+    public void użytkownik_klika_na_znaleziony_produkt() throws Throwable {
+        driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[5]/div/div/div[2]/div/div[2]/div[2]/div[1]/div")).click();
+        czas(3000);
+     //   String tytulTejStrony = driver.getTitle();
+     //   System.out.println(tytulTejStrony);
+     //   czas(2000);
+    }
+
+
+    @Then("^Weryfikacja tytulu strony z wyszukanym produktem$")
+    public void Weryfikacja_tytulu_strony_z_wyszukanym_produktem() throws Throwable {
+        String spodziewanyTytulStrony = "APPLE iPhone 11 Pro Max 64GB Srebrny Smartfon - ceny i opinie w Media Expert";
+        String tytulTejStrony = driver.getTitle();
+        Assert.assertEquals(spodziewanyTytulStrony, tytulTejStrony);
+    }
+
+
+    @Then("^Test nr trzy zakonczony$")
+    public void test_nr_trzy_zakonczony() throws Throwable {
+        driver.close();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
