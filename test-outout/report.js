@@ -13,127 +13,113 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "line": 7,
-  "name": "Scenariusz testowy numer jeden",
+  "line": 15,
+  "name": "Użytkownik wprowadza poprawne dane logowania",
   "description": "",
-  "id": "pierwszy-test;scenariusz-testowy-numer-jeden",
+  "id": "pierwszy-test;użytkownik-wprowadza-poprawne-dane-logowania",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 6,
-      "name": "@scenariusz1"
+      "line": 14,
+      "name": "@scenariusz3"
     }
   ]
 });
 formatter.step({
-  "line": 8,
-  "name": "daje ci slowo kluczowe",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "strona jest otwarta",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "wyszukujesz id elementu",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "szukasz miejsca do wpisania",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "klikasz na szukajke",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "PierwszyTest.daje_ci_slowo_kluczowe()"
-});
-formatter.result({
-  "duration": 8046752000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PierwszyTest.strona_jest_otwarta()"
-});
-formatter.result({
-  "duration": 10792900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PierwszyTest.wyszukujesz_id_elementu()"
-});
-formatter.result({
-  "duration": 6974600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PierwszyTest.szukasz_miejsca_do_wpisania()"
-});
-formatter.result({
-  "duration": 6561800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PierwszyTest.klikasz_na_szukajke()"
-});
-formatter.result({
-  "duration": 4077626700,
-  "status": "passed"
-});
-formatter.scenario({
   "line": 16,
-  "name": "badamy strone Media Expert",
-  "description": "",
-  "id": "pierwszy-test;badamy-strone-media-expert",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 15,
-      "name": "@scenariusz2"
-    }
-  ]
+  "name": "Użytkownika uruchamia strone serwisu",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 17,
-  "name": "daje ci otwarta strone",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 18,
-  "name": "sprawdzam tytul strony",
+  "name": "Strona główna serwisu Media Expert jest wyświetlona",
   "keyword": "Then "
 });
 formatter.step({
+  "line": 18,
+  "name": "Użytkownik klika na przycisk Twoje konto",
+  "keyword": "And "
+});
+formatter.step({
   "line": 19,
-  "name": "zamykam strone",
+  "name": "Użytkownik czeka na załadowanie się strony",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "użytkownik wprowadza w pole login swój login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "użytkownik wprowadza w pole hasło swoje hasło",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 22,
+  "name": "użytkownik klika na przycisk zaloguj",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "Strona powitalna jest wyświetlona",
   "keyword": "And "
 });
 formatter.match({
-  "location": "PierwszyTest.daje_ci_otwarta_strone()"
+  "location": "PierwszyTest.użytkownika_uruchamia_strone_serwisu()"
 });
 formatter.result({
-  "duration": 7978948000,
+  "duration": 10021367400,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.sprawdzam_tytul_strony()"
+  "location": "PierwszyTest.strona_główna_serwisu_Media_Expert_jest_wyświetlona()"
 });
 formatter.result({
-  "duration": 8107000,
+  "duration": 263904900,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.zamykam_strone()"
+  "location": "PierwszyTest.użytkownik_klika_na_przycisk_Twoje_konto()"
 });
 formatter.result({
-  "duration": 4080231800,
+  "duration": 5628657800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PierwszyTest.użytkownik_czeka_na_załadowanie_się_strony()"
+});
+formatter.result({
+  "duration": 5000698100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PierwszyTest.użytkownik_wprowadza_w_pole_login_swój_login()"
+});
+formatter.result({
+  "duration": 1292560000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PierwszyTest.użytkownik_wprowadza_w_pole_hasło_swoje_hasło()"
+});
+formatter.result({
+  "duration": 1225026700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PierwszyTest.użytkownik_klika_na_przycisk_zaloguj()"
+});
+formatter.result({
+  "duration": 2540143100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PierwszyTest.strona_powitalna_jest_wyświetlona()"
+});
+formatter.result({
+  "duration": 5144311100,
   "status": "passed"
 });
 });
