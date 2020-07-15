@@ -353,9 +353,38 @@ czas(9000);
 
 
 
+// test nr 6 - weryfikacja koloru ikonki
 
 
 
+    @Then("^Pobranie koloru$")
+    public void Pobranie_koloru() throws Throwable {
+
+        String color = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[6]/div/div/div[1]/div/ul/li")).getCssValue("color");
+        String[] hexValue = color.replace("rgba(", "").replace(")", "").split(",");
+
+        int hexValue1=Integer.parseInt(hexValue[0]);
+        hexValue[1] = hexValue[1].trim();
+        int hexValue2=Integer.parseInt(hexValue[1]);
+        hexValue[2] = hexValue[2].trim();
+        int hexValue3=Integer.parseInt(hexValue[2]);
+
+        String kolorZeStrony = String.format("#%02x%02x%02x", hexValue1, hexValue2, hexValue3);
+
+     //   Assert.assertEquals("#fff200", kolorZeStrony);
+
+        Assert.assertEquals("#333333", kolorZeStrony);
+
+        czas(4000);
+    }
+
+
+
+
+    @Then("^Test nr szesc zakonczony$")
+    public void test_nr_szesc_zakonczony() throws Throwable {
+        driver.close();
+    }
 
 
 

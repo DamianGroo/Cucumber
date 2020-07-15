@@ -83,3 +83,11 @@ Feature: Pierwszy test
     And Test nr piec zakonczony
 
 
+  @test6_sprawdzenieKoloru
+  Scenario: Sprawdzenie czy zastosowano właściwy kolor ikonki
+    Given Użytkownik uruchamia strone serwisu
+    Then Strona główna serwisu Media Expert jest wyświetlona
+    And Pobranie koloru
+    And Test nr szesc zakonczony
+
+
