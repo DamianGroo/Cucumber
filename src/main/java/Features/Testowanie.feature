@@ -91,3 +91,12 @@ Feature: Pierwszy test
     And Test nr szesc zakonczony
 
 
+  @test7_TestKtoryKonczySieNiepowodzeniem
+  Scenario: Demonstracja negatywnego wyniku testu
+    Given Użytkownik uruchamia strone serwisu
+    Then Strona główna serwisu Media Expert jest wyświetlona
+    And Użytkownik klika na przycisk Twoje konto
+    And Użytkownik czeka na załadowanie się strony
+    And Tytuł sekcji jest inny niż oczekiwany
+    And Test nr siedem zakonczony
+

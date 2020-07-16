@@ -13,65 +13,114 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "line": 87,
-  "name": "Sprawdzenie czy zastosowano właściwy kolor ikonki",
+  "line": 95,
+  "name": "Demonstracja negatywnego wyniku testu",
   "description": "",
-  "id": "pierwszy-test;sprawdzenie-czy-zastosowano-właściwy-kolor-ikonki",
+  "id": "pierwszy-test;demonstracja-negatywnego-wyniku-testu",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 86,
-      "name": "@test6_sprawdzenieKoloru"
+      "line": 94,
+      "name": "@test7_TestKtoryKonczySieNiepowodzeniem"
     }
   ]
 });
 formatter.step({
-  "line": 88,
+  "line": 96,
   "name": "Użytkownik uruchamia strone serwisu",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 89,
+  "line": 97,
   "name": "Strona główna serwisu Media Expert jest wyświetlona",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 90,
-  "name": "Pobranie koloru",
+  "line": 98,
+  "name": "Użytkownik klika na przycisk Twoje konto",
   "keyword": "And "
 });
 formatter.step({
-  "line": 91,
-  "name": "Test nr szesc zakonczony",
+  "line": 99,
+  "name": "Użytkownik czeka na załadowanie się strony",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 100,
+  "name": "użytkownik wprowadza w pole login błędny login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 101,
+  "name": "użytkownik wprowadza w pole hasło błędne hasło",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 102,
+  "name": "użytkownik klika na przycisk zaloguj",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 103,
+  "name": "Komunikat błędu na stronie jest inny niż oczekiwany",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 104,
+  "name": "Test nr siedem zakonczony",
   "keyword": "And "
 });
 formatter.match({
   "location": "PierwszyTest.użytkownik_uruchamia_strone_serwisu()"
 });
 formatter.result({
-  "duration": 8833075800,
+  "duration": 10062448600,
   "status": "passed"
 });
 formatter.match({
   "location": "PierwszyTest.strona_główna_serwisu_Media_Expert_jest_wyświetlona()"
 });
 formatter.result({
-  "duration": 347289900,
+  "duration": 591257300,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.Pobranie_koloru()"
+  "location": "PierwszyTest.użytkownik_klika_na_przycisk_Twoje_konto()"
 });
 formatter.result({
-  "duration": 4173644200,
+  "duration": 5362024300,
   "status": "passed"
 });
 formatter.match({
-  "location": "PierwszyTest.test_nr_szesc_zakonczony()"
+  "location": "PierwszyTest.użytkownik_czeka_na_załadowanie_się_strony()"
 });
 formatter.result({
-  "duration": 170639700,
+  "duration": 5000600600,
   "status": "passed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "location": "PierwszyTest.użytkownik_wprowadza_w_pole_hasło_błędne_hasło()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "PierwszyTest.użytkownik_klika_na_przycisk_zaloguj()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

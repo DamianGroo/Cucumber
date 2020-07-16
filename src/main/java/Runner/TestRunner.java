@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
     //    , tags = {"@grupaScenariuszy"}
 
      //  , tags = {"@grupaScenariuszy"}
-        , tags = {"@test6_sprawdzenieKoloru"}
+        , tags = {"@test7_TestKtoryKonczySieNiepowodzeniem"}
 
                 )
 

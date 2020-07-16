@@ -388,6 +388,21 @@ czas(9000);
 
 
 
+// Test nr 7 - test ktory konczy sie niepowodzeniem
+
+
+    @Then("^Tytuł sekcji jest inny niż oczekiwany$")
+    public void Tytuł_sekcji_jest_inny_niż_oczekiwany() throws Throwable {
+        String nazwaSekcji = driver.findElement(By.xpath("/html/body/div[1]/div[7]/div/div/div[1]/div[1]/div[1]/p")).getText();
+        String docelowaNazwaSekcji = "Strefa Logowania";
+        Assert.assertEquals(docelowaNazwaSekcji, nazwaSekcji);
+    }
+
+    @Then("^Test nr siedem zakonczony$")
+    public void test_nr_siedem_zakonczony() throws Throwable {
+        driver.close();
+    }
+
 
 
 
