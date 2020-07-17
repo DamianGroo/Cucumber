@@ -1,6 +1,6 @@
 
 @grupaScenariuszy
-Feature: Pierwszy test
+Feature: JUnit + Cucumber
 
 
 
@@ -50,7 +50,7 @@ Feature: Pierwszy test
 
 
   @test4_NieudanaRejestracja
-  Scenario: Użytkownik wyszukuje konkretny produkt
+  Scenario: Użytkownik błędnie wypełnia formularz rejestracji
     Given Użytkownik uruchamia strone serwisu
     Then Strona główna serwisu Media Expert jest wyświetlona
     And Użytkownik klika na przycisk Twoje konto
@@ -84,7 +84,7 @@ Feature: Pierwszy test
 
 
   @test6_sprawdzenieKoloru
-  Scenario: Sprawdzenie czy zastosowano właściwy kolor ikonki
+  Scenario: Weryfikacja koloru czcionki
     Given Użytkownik uruchamia strone serwisu
     Then Strona główna serwisu Media Expert jest wyświetlona
     And Pobranie koloru

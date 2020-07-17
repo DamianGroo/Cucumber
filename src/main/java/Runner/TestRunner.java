@@ -10,13 +10,14 @@ import org.junit.runner.RunWith;
 
         features = "E:\\INTELLJ 2020.1.2\\PROGRAMY DO NOWSZEJ WERSJI\\CUCUMB\\Cucumber\\Cucek\\src\\main\\java\\Features"
         , glue = {"stepsDefinitions"}
-        , format = {"pretty", "html:test-outout"}
+    //    , format = {"pretty", "html:test-outout"}
        // , tags = { "@scenariusz1" , "@scenariusz2" }
     //    , tags = {"@grupaScenariuszy"}
 
-     //  , tags = {"@grupaScenariuszy"}
-        , tags = {"@test7_TestKtoryKonczySieNiepowodzeniem"}
-
+       , tags = {"@grupaScenariuszy"}
+     //   , tags = {"@test7_TestKtoryKonczySieNiepowodzeniem"}
+     //   , tags = {"@test5_DodaniePrzedmiotuDoKoszyka"}
+        , monochrome = true
                 )
 
 
